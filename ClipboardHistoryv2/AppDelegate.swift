@@ -1,30 +1,12 @@
-//
-//  AppDelegate.swift
-//  ClipboardHistoryv2
-//
-//  Created by Ace ♠️ on 17/12/2024.
-//
-
 import Cocoa
+//import MASShortcut
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        // Initialize managers
+        _ = ClipboardHistoryManager.shared
+        _ = GlobalShortcutHandler.shared
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
-    }
-
-
 }
 
